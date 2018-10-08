@@ -14,6 +14,7 @@ export class AppService {
   }
 
   updateContacto(key, contacto) {
+    this.contactos.set(key, contacto);
     this.contactos.update(key, contacto);
   }
 }
