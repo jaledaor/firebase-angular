@@ -1,0 +1,14 @@
+<mat-card *ngIf="contacto">
+  <mat-card-title>
+    Detalles del Contacto
+  </mat-card-title>
+  <mat-card-content>
+    Nombre: {{contacto.nombre}}<br>
+    Apellido: {{contacto.apellidos}}<br>
+    telefono: {{contacto.telefono}}<br>
+    ciudad: {{contacto.ciudad}}<br>
+    <button mat-button (click)="onCerrar()" color="primary">
+      cerrar
+    </button>
+  </mat-card-content>
+</mat-card>
